@@ -25,7 +25,7 @@ while(j >= 1){
 }
 whileElem.innerHTML = whileResult;
 
-// Printing Even numbers from 1 - 20 using for lop
+// Printing Even numbers from 1 - 20 using for loop
 let evenNumber = document.getElementById("forEven");
 let evenResult = "";
 
@@ -37,3 +37,17 @@ for(let e = 1; e <= 20; e++){
 evenNumber.innerHTML = evenResult;
 }
 
+
+// Printing odd numbers from 1 - 15 using while loop
+let whileOdd = document.getElementById("whileOdd");
+let oddResult = "";
+
+let o = 1;
+while(o <= 15){
+    if (o%2 === 1){
+    console.log(o);
+    oddResult += o +'<br>';
+    }
+    o++;
+    whileOdd.innerHTML = oddResult;
+}
