@@ -22,7 +22,18 @@ while(j >= 1){
     console.log(j);
     whileResult += j + '<br>';
     j--;
-   
 }
 whileElem.innerHTML = whileResult;
+
+// Printing Even numbers from 1 - 20 using for lop
+let evenNumber = document.getElementById("forEven");
+let evenResult = "";
+
+for(let e = 1; e <= 20; e++){
+    if( e%2 === 0){
+        console.log(e);
+        evenResult += e + '<br>'
+    }
+evenNumber.innerHTML = evenResult;
+}
 
