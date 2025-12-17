@@ -63,3 +63,24 @@ for(let m = 1; m <= 10; m++){
 multi5.innerHTML = multiResult;
 
 
+// Printing sum of numbers from 1 to 100
+let sumResult = document.getElementById("sumOf");
+let sum = 0;
+
+for(let s = 1; s <= 100; s++){
+    sum += s;
+}
+sumResult.innerHTML = sum;
+console.log(sum);
+
+
+
+// with while loop
+let summ = 0;
+let ss = 1;
+while(ss <= 100){
+    summ += ss;
+    ss++; 
+}
+console.log(sum)
+
