@@ -51,3 +51,15 @@ while(o <= 15){
     o++;
     whileOdd.innerHTML = oddResult;
 }
+
+// Printing multiplication table of 5(i..e 5x1, 5x2...) using for loop
+let multi5 = document.getElementById("multi5");
+let multiResult = "";
+
+for(let m = 1; m <= 10; m++){
+    console.log(`5 * ${m} = ${5 * m}`)
+    multiResult += (`5 * ${m} = ${5 * m}`) + '<br>'
+}
+multi5.innerHTML = multiResult;
+
+
