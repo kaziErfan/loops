@@ -84,3 +84,16 @@ while(ss <= 100){
 }
 console.log(sum)
 
+
+// Printing all number between 1 - 50 that are divisible by 3
+let divi = document.getElementById("divi");
+let diviResult = "";
+
+for (let d = 1; d <= 50; d++){
+    if(d%3 === 0){
+        console.log(d);
+        diviResult += d + '<br>';
+    }
+    divi.innerHTML = diviResult;
+}
+
