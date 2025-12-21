@@ -97,6 +97,22 @@ for (let d = 1; d <= 50; d++){
     div.innerHTML = divResult;
 }
 
+// Ask the user for a number and print whether each number from 1 to that number is odd or even
+let evOdd = document.getElementById("evOdd");
+let evenOddResult = "";
+let val = prompt("Give a number:")
+
+for(let v = 1; v <= val; v++){
+    if(v%2 === 0){
+        console.log(`${v} is even`);
+        evenOddResult += (`${v} is even`) + '<br>';
+    }
+    else{
+        console.log(`${v} is odd`);
+        evenOddResult += (`${v} is odd`) + '<br>';
+    }
+    evOdd.innerHTML = evenOddResult;
+}
 
 
 
