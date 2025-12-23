@@ -142,6 +142,15 @@ for(let od = 1; od <= 100; od++){
     
 }
 
+// Count How many digits are there in a number
+let num = 12345;
+let counter = 0;
+
+while (num > 0){
+    counter++;
+    num = Math.floor(num / 10);
+console.log(counter);
+}
 
 
 
