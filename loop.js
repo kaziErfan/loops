@@ -127,4 +127,22 @@ for(let p = 1; p <= 100; p++){
 }
 
 
+// Print first five odd numbers between 1 - 100
+let firstFiveOdd = document.getElementById("firstFiveOdd");
+let fiveOddResult = "";
+let count = 0;
+for(let od = 1; od <= 100; od++){
+    if(od%2 === 1){
+        console.log(od);
+        count++;
+        fiveOddResult += count + '<br>';
+    }
+    firstFiveOdd.innerHTML = fiveOddResult;
+    if(count === 5) break;
+    
+}
+
+
+
+
 
