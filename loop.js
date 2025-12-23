@@ -97,6 +97,7 @@ for (let d = 1; d <= 50; d++){
     div.innerHTML = divResult;
 }
 
+
 // Ask the user for a number and print whether each number from 1 to that number is odd or even
 let evOdd = document.getElementById("evOdd");
 let evenOddResult = "";
@@ -112,6 +113,17 @@ for(let v = 1; v <= val; v++){
         evenOddResult += (`${v} is odd`) + '<br>';
     }
     evOdd.innerHTML = evenOddResult;
+}
+
+// Count how many numbers between 1 - 100 are divisible by both 3 & 5
+let diBet = document.getElementById("divBy");
+let diResult = "";
+for(let p = 1; p <= 100; p++){
+    if(p%3 === 0 && p%5 === 0){
+        console.log(p);
+        diResult += p + '<br>';
+    }
+    diBet.innerHTML = diResult;
 }
 
 
